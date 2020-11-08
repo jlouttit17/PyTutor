@@ -1,6 +1,25 @@
 <resources>
+    <!-- activity_main.xml-->
     <string name="app_name">PyTutor</string>
     <string name="subtitle">Learn Python</string>
     <string name="start">Select a Lesson</string>
     <string name="points">Points</string>
+
+    <!-- score.xml -->
+    <string name="score">Score:</string>
+    <string name="bronze">Bronze: 50 points</string>
+    <string name="silver">Silver: 500 points</string>
+    <string name="gold">Gold: 5000 points</string>
+    <string name="back">Back to menu</string>
+
+    <!-- lesson_list.xml -->
+    <string name="lessonSelect">Lesson Select</string>
+    <string name="lesson1">Lesson 1</string>
+    <string name="lesson2">Lesson 2</string>
+    <string name="lesson3">Lesson 3</string>
+    <string name="lesson4">Lesson 4</string>
+    <string name="lesson5">Lesson 5</string>
+    <string name="lesson6">Lesson 6</string>
+    <string name="lesson7">Lesson 7</string>
+    <string name="lesson8">Lesson 8</string>
 </resources>

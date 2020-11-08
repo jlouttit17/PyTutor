@@ -5,9 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
+
+    int points;
+    String score = String.valueOf(points);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,9 +17,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void selectLesson(View view){
+    public void goToLessons(View view){
         Intent intent = new Intent(this, LessonList.class);
-        Button button = (Button) findViewById(R.id.button);
+        startActivity(intent);
+    }
+
+    public void points(View view){
+        Intent intent = new Intent(this, Score.class);
         startActivity(intent);
     }
 }
