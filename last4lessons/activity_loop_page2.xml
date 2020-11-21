@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#113977"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Skip to Quiz"
+        android:textColor="@color/black"
+        app:backgroundTint="#959507"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Loops"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="The else statement tells the computer what to do if the condition for the while loop is false. It
+does not need a condition of its own.
+\n\nExample:
+\n\nx=5
+\nwhile x > 9:
+\n   x=x+1
+\nElse
+\n   print(“x is less than 9”)
+\n\nThis example will print the “X is less than 9” phrase, as it skips the while loop because the
+condition is not true.
+\nThe second type of loop is the for loop. This is used as an iterator, and will cycle through the
+values in a list or tuple.
+\n\nExample:
+\n\ncolors=[“red”,”green”,”yellow”]
+\nfor x in colors:
+\n   print(x)
+\n\nThis example will output the three values stored in colors, cycling through them in order.
+\nAside from looping through lists, you can also loop through the characters in an individual string.
+\n\nExample”
+\n\nfor x in “hello”
+\n   print(x)
+\n\nThis will print the individual letters in the word hello."
+
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="272dp"
+        android:layout_marginLeft="272dp"
+        android:layout_marginBottom="30dp"
+        android:text="Next Page"
+        android:textColor="@color/black"
+        app:backgroundTint="#959507"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="260dp"
+        android:layout_marginRight="260dp"
+        android:layout_marginBottom="30dp"
+        android:text="Back to List"
+        android:textColor="@color/black"
+        app:backgroundTint="#959507"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
