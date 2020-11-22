@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#113977"
+    tools:context=".MainActivity">
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Skip to Quiz"
+        app:backgroundTint="#959507"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Lists"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="Lists do not have to hold strings, they can hold any data type. Moreover, data types can be
+mixed within a single list.
+\nExample:
+\n\nmyList=[1,2,3,4,5]
+\nx=[1.2,”Hello”,3,4,”VeryNice]
+\n\nBoth of these are valid lists, one holding only integers, with the other holding integers, floating
+point numbers, and strings.
+\nLists can also be modified after they are created. The first modification is the append method.
+This is used to add items to the end of the list. It is called by a list, and features the added value
+as a parameter.
+\nExample:
+\n\nx=[1,2,3,4,5]
+\nx.append(6)
+\n\nThis example will change the list x so it contains [1,2,3,4,5,6].
+\nThe next way to modify lists is with the insert method. This inserts a value into a specific part of
+a list. Similar to append, it is called by a list, but features two parameters, the location to insert
+into, and the item to insert.
+\nExample:
+\n\nx=[1,2,3,4,5]
+\nx.insert(3,’y’)
+\n\nThis will change list x to hold [1,2,3,’y’,4,5] as y has been placed into the 3 slot in the list, which
+is the fourth item.
+"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="272dp"
+        android:layout_marginLeft="272dp"
+        android:layout_marginBottom="30dp"
+        android:text="Next Page"
+        app:backgroundTint="#959507"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="260dp"
+        android:layout_marginRight="260dp"
+        android:layout_marginBottom="30dp"
+        android:text="Back to List"
+        app:backgroundTint="#959507"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

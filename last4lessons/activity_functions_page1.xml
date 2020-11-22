@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#113977"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Skip to Quiz"
+        android:textColor="@color/black"
+        app:backgroundTint="#959507"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Functions"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="11dp"
+        android:text="Functions are blocks of code that are only run when they are called. They are declared with the
+keyword def, followed by the name of the function, a set of parentheses, and a colon.
+\n\nExample:
+\n\ndef myFunction():
+\n   print(“This is my new function”)
+\n\nThis example creates a function called myFunction, that outputs ”This is my new function” when
+it is called. Notice the indentation, as indentation is how different blocks of code are
+differentiated in Python.
+\nYou can also set a default value for arguments by using an equal sign in the definition.
+\n\nExample:
+\n\ndef myFunction(x = ”Hello”):
+\n   print(x)
+\nmyFunction()
+\n\nIn this example, the function does not have an argument when is called, so it uses the default
+value from the function definition, Hello.
+\nYou can pass data to the function by placing it within the parentheses. When defining the
+function, place the name of a variable within the parentheses. The function is later called by the
+function name, with arguments placed within the parentheses. These arguments can be a string
+or integer directly, or the name of a variable.
+
+"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="272dp"
+        android:layout_marginLeft="272dp"
+        android:layout_marginBottom="30dp"
+        android:text="Next Page"
+        android:textColor="@color/black"
+        app:backgroundTint="#959507"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="260dp"
+        android:layout_marginRight="260dp"
+        android:layout_marginBottom="30dp"
+        android:text="Back to List"
+        android:textColor="@color/black"
+        app:backgroundTint="#959507"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
