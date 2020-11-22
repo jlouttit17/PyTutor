@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#113977"
-    android:onClick="selectLesson"
     android:padding="16dp">
 
     <TextView
@@ -52,7 +51,7 @@
 
     <Button
         android:id="@+id/points"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:onClick="points"
         android:text="@string/points"

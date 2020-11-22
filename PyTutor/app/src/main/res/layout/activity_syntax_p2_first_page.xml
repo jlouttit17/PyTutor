@@ -5,51 +5,66 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#113977"
-    tools:context=".MainActivity">
+    tools:context=".LessonSyntax2">
 
     <TextView
-        android:id="@+id/score"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Other lesson"
-        android:textColor="#FFFFFF"
+        android:text="@string/syntax2"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/bronze"
+    <Button
+        android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="191dp"
-        android:text="This is for FinalPage of Lesson w/ Link to quiz"
-        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="start"
+        android:text="@string/skip"
+        app:backgroundTint="#959507"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="@string/syntax2Page1"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/score" />
+        app:layout_constraintTop_toBottomOf="@+id/button1" />
 
     <Button
-        android:id="@+id/lesson1"
+        android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="272dp"
         android:layout_marginLeft="272dp"
-        android:layout_marginTop="300dp"
-        android:text="Start Quiz"
+        android:layout_marginBottom="30dp"
+        android:onClick="proceed"
+        android:text="@string/next"
         app:backgroundTint="#959507"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bronze" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
         android:layout_marginEnd="260dp"
         android:layout_marginRight="260dp"
-        android:text="Back to List"
+        android:layout_marginBottom="30dp"
+        android:onClick="backToLessons"
+        android:text="@string/backLessons"
         app:backgroundTint="#959507"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bronze" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

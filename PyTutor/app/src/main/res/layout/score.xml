@@ -42,6 +42,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:text="@string/scoreVal"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -65,7 +66,7 @@
         android:background="#959507"
         android:text="@string/gold"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/back"
+        app:layout_constraintBottom_toTopOf="@+id/points"
         app:layout_constraintEnd_toStartOf="@+id/gold_img"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -83,7 +84,7 @@
         app:layout_constraintEnd_toStartOf="@+id/score_val" />
 
     <Button
-        android:id="@+id/back"
+        android:id="@+id/points"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"

@@ -17,6 +17,14 @@
             </intent-filter>
         </activity>
         <activity android:name=".LessonList"></activity>
+        <activity android:name=".LessonSyntax1"></activity>
+        <activity android:name=".LessonSyntax2"></activity>
+        <activity android:name=".LessonLists"></activity>
+        <activity android:name=".LessonStrings"></activity>
+        <activity android:name=".LessonTuples"></activity>
+        <activity android:name=".LessonLoops"></activity>
+        <activity android:name=".LessonClasses"></activity>
+        <activity android:name=".LessonFunctions"></activity>
         <activity android:name=".Score"></activity>
     </application>
 

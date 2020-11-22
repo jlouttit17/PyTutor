@@ -8,9 +8,6 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
-    int points;
-    String score = String.valueOf(points);
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

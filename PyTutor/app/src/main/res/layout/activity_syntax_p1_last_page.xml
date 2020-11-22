@@ -5,51 +5,54 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#113977"
-    tools:context=".MainActivity">
+    tools:context=".LessonSyntax1">
 
     <TextView
-        android:id="@+id/score"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Lesson 1"
-        android:textColor="#FFFFFF"
+        android:text="@string/syntax1"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/bronze"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="191dp"
-        android:text="This textbox is going to contain an overview of what the lesson generally covers, as well as how long the lesson is expected to take. This should only be about a paragraph in length."
-        android:textColor="#FFFFFF"
+        android:layout_marginTop="18dp"
+        android:text="@string/syntax1Page2"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/score" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/select_lesson"
+        android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="26dp"
-        android:layout_marginLeft="26dp"
-        android:layout_marginTop="172dp"
-        android:text="Proceed"
+        android:layout_marginStart="272dp"
+        android:layout_marginLeft="272dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="start"
+        android:text="@string/startLessons"
         app:backgroundTint="#959507"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bronze" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/points"
+        android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="172dp"
-        android:layout_marginEnd="26dp"
-        android:layout_marginRight="26dp"
-        android:text="Back to List"
+        android:layout_marginEnd="260dp"
+        android:layout_marginRight="260dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="backToLessons"
+        android:text="@string/backLessons"
         app:backgroundTint="#959507"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bronze" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
